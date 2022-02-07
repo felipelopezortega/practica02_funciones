@@ -27,3 +27,12 @@ greetMe ();
 
 logGreeting(greetMe);
 //functions are first class, pass it as a parameter
+
+let greet = () => console.log("Hello");
+greet();
+
+let logGreeting = fn => fn();
+logGreeting(greet);
+
+let greetMe = () => console.log("Hello v3");
+logGreeting(greetMe);
